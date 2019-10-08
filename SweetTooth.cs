@@ -35,6 +35,7 @@ namespace hungry_ninja
                     System.Console.WriteLine($"{item.Name} was sweet! So SweetTooth gained addittional 10 calories!");
                 }
                 item.GetInfo();
+                ConsumptionHistory.Add(item);
                 if(calorieIntake >= 1500)
                 {
                     isFull = true;

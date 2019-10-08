@@ -27,6 +27,14 @@ namespace hungry_ninja
                     bobby.Consume(worldclass.Serve());
                 }
             }
+            if(bobby.ConsumptionHistory.Count > robby.ConsumptionHistory.Count)
+            {
+                System.Console.WriteLine($"SweetTooth at more food! A total of {bobby.ConsumptionHistory.Count}");
+            }
+            else
+            {
+                System.Console.WriteLine($"SpiceHound at more food! A total of {robby.ConsumptionHistory.Count}");
+            }
         }
     }
 }

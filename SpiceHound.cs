@@ -31,8 +31,9 @@ namespace hungry_ninja
                     calorieIntake += 5;
                     System.Console.WriteLine($"{item.Name} was spicy! So SpiceHound gained addittional 5 calories!");
                 }
+                ConsumptionHistory.Add(item);
                 item.GetInfo();
-                if(calorieIntake > 1200)
+                if(calorieIntake > 1500)
                 {
                     isFull = true;
                 }
